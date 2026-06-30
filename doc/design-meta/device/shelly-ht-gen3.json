@@ -1,0 +1,27 @@
+{
+  "src": "shellyhtg3-AABBCCDDEEFF",
+  "dst": "mqtt",
+  "method": "NotifyStatus",
+  "params": {
+    "ts": 1719999999.12,
+    "temperature:0": {
+      "id": 0,
+      "tC": 21.8,
+      "tF": 71.2
+    },
+    "humidity:0": {
+      "id": 0,
+      "rh": 48.5
+    },
+    "devicepower:0": {
+      "id": 0,
+      "battery": {
+        "V": 5.72,
+        "percent": 86
+      }
+    },
+    "wifi": {
+      "rssi": -61
+    }
+  }
+}
