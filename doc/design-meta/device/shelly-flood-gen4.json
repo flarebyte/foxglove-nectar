@@ -1,0 +1,8 @@
+{
+  "water_leak": false,
+  "temperature": 21.8,
+  "battery": 94,
+  "battery_low": false,
+  "tamper": false,
+  "wifi_status": "connected"
+}

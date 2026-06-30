@@ -1,0 +1,17 @@
+{
+  "id": 0,
+  "source": "MQTT",
+  "output": true,
+  "apower": 142.3,
+  "voltage": 230.8,
+  "current": 0.617,
+  "pf": 0.99,
+  "aenergy": {
+    "total": 1245876,
+    "by_minute": [142, 141, 143]
+  },
+  "temperature": {
+    "tC": 41.2,
+    "tF": 106.2
+  }
+}

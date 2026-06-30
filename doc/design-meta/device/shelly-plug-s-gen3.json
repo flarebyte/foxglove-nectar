@@ -1,0 +1,14 @@
+{
+  "id": 0,
+  "output": true,
+  "apower": 1123.4,
+  "current": 4.88,
+  "voltage": 230.2,
+  "pf": 0.99,
+  "aenergy": {
+    "total": 842156
+  },
+  "temperature": {
+    "tC": 39.8
+  }
+}
