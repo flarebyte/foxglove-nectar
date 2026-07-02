@@ -1,0 +1,9 @@
+device,typical_topic,primary_field,other_fields,heartbeat_or_availability
+Sonoff Zigbee Door Contact,zigbee2mqtt/front_door,contact,"battery, voltage, tamper, linkquality",zigbee2mqtt/front_door/availability
+Sonoff Zigbee Motion Sensor (SNZB-03),zigbee2mqtt/kitchen_motion,occupancy,"battery, voltage, battery_low, linkquality",zigbee2mqtt/kitchen_motion/availability
+Shelly Pro 4PM,device/status/switch:0..3,output,"apower, current, voltage, pf, aenergy, temperature",device/online
+Shelly EM,shellies/<id>/emeter/0..1,power,"current, voltage, pf, total, total_returned",shellies/<id>/online
+Shelly 1PM Gen4,device/status/switch:0,output,"apower, current, voltage, pf, aenergy, temperature",device/online
+Shelly Flood Gen4,home/utility_room/flood/status,water_leak,"temperature, battery, battery_low, tamper",home/utility_room/flood/online
+Shelly Plug S Gen3,home/coffee_machine/status/switch:0,output,"apower, current, voltage, pf, aenergy, temperature",home/coffee_machine/online
+Shelly H&T Gen3,shellyhtg3-<id>/events/rpc,"temperature_c, humidity_percent","battery_percent, rssi","periodic wake-up reports / online status"

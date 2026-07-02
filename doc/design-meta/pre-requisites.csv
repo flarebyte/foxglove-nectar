@@ -1,0 +1,20 @@
+category,requirement,macOS_install,Raspberry_Pi_install,mandatory,notes
+Go runtime,Go 1.24+,"brew install go","sudo apt install golang-go",YES,Used to compile and run the automation program
+MQTT library,Eclipse Paho Go client,"go get github.com/eclipse/paho.mqtt.golang","go get github.com/eclipse/paho.mqtt.golang",YES,Standard Go MQTT client library
+MQTT broker,Mosquitto,"brew install mosquitto","sudo apt install mosquitto mosquitto-clients",YES,Central message bus
+MQTT CLI tools,mosquitto_pub and mosquitto_sub,"brew install mosquitto","sudo apt install mosquitto-clients",RECOMMENDED,Useful for debugging topics and payloads
+Zigbee coordinator,USB Zigbee dongle,N/A,Plug into USB port,ONLY_FOR_ZIGBEE,Examples: Sonoff ZBDongle-E or ZBDongle-P
+Zigbee bridge,Zigbee2MQTT,"docker run ... or npm install zigbee2mqtt","docker run ... or npm install zigbee2mqtt",ONLY_FOR_ZIGBEE,Converts Zigbee messages into MQTT
+Serial permissions,Access to USB device,"Check /dev/cu.* permissions","Add user to dialout group",ONLY_FOR_ZIGBEE,Needed by Zigbee2MQTT
+WiFi network,Local IP connectivity,None,None,YES,Devices and broker must reach each other
+DNS or static IP,Stable broker address,Optional,Optional,RECOMMENDED,Prevents configuration breakage
+TLS certificates,CA and client certificates,Optional,Optional,OPTIONAL,Needed for secure MQTT deployments
+Device naming,Friendly names,None,None,YES,Examples: kitchen_motion or garage_door
+Topic conventions,Standard topic hierarchy,None,None,YES,Examples: home/kitchen/motion or site1/pump1/state
+Availability topics,Heartbeat convention,None,None,RECOMMENDED,Examples: device/online or device/availability
+JSON handling,Encoding/decoding support,Included in Go,Included in Go,YES,Use encoding/json
+Configuration management,YAML or JSON config files,Optional,Optional,RECOMMENDED,Store broker URLs and topic mappings
+Logging,Structured logging library,"go get log/slog or zap","go get log/slog or zap",RECOMMENDED,Useful for debugging automations
+Container runtime,Docker,"brew install docker","sudo apt install docker.io",OPTIONAL,Simplifies deployment
+System service,Launch agent or systemd,launchd,systemd,RECOMMENDED,Auto-start automation on reboot
+Monitoring,Health checks,None,None,RECOMMENDED,Track MQTT connectivity and device liveness
